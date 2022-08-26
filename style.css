@@ -7,19 +7,21 @@ body {
 }
 
 .container {
-    min-height: 400px;
+    min-height: 500px;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
 
 }
 
 .header-container{
     background-color: rgb(74, 71, 71);
     min-height: 100px;
-    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
 }
 
 header{
@@ -72,15 +74,45 @@ a {
     }
 }
 
+.highlight {
+    font-weight: 700;
+}
+
 
 /* Mobile View */
-@media (max-width:400px){
+@media (max-width:450px){
     .col{
         width: 100%;
     }
 
     .hide-for-mobile {
         display: none;
+    }
+
+    .container {
+        padding-top: 40px;
+    
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container{
+        position: relative;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .myButton {
+        margin-left: 0;
     }
 }
 
